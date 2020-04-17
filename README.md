@@ -1,8 +1,8 @@
 # Java-OOP
 
-## OOLT.Theory
+### OOLT.Theory
 Slides for fundamental knowledge.
-## OOLT.Lab
+### OOLT.Lab
 Slides for exercises and coding tutorials.
-## Exercises
+### Exercises
 My code fragments submitted each week.
