@@ -1,6 +1,6 @@
 package hust.soict.aims.media;
 
-public class DigitalVideoDisc extends Media {
+public class DigitalVideoDisc extends Disc implements Playable, Comparable<Object> {
 
 	private String director;
 
@@ -11,19 +11,6 @@ public class DigitalVideoDisc extends Media {
 	 */
 	public DigitalVideoDisc() {
 		super();
-	}
-	
-	public DigitalVideoDisc(String title) {
-		super(title);
-	}
-	
-	public DigitalVideoDisc(String title, String category) {
-		super(title, category);
-	}
-	
-	public DigitalVideoDisc(String title, String category, String director) {
-		super(title, category);
-		this.director = director;
 	} 
 
 	/**
@@ -54,5 +41,20 @@ public class DigitalVideoDisc extends Media {
 	 */
 	public void setLength(int length) {
 		this.length = length;
+	}
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		System.out.println("Playing DVD: " + this.getTitle());
+		System.out.println("DVD length: " + this.getLength());
+	}
+	
+	public int compareTo(Object obj) {
+		DigitalVideoDisc tmp = (DigitalVideoDisc) obj;
+		int iCompareTitle = this.getTitle().compareTo(tmp.getTitle());
+		if (iCompareTitle == 0)
+			return Integer.compare(this.getLength(), tmp.getLength());
+		return iCompareTitle;
 	}
 }

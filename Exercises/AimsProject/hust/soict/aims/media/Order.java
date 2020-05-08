@@ -1,10 +1,12 @@
 package hust.soict.aims.media;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Order {
 
-	private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+	private List<Media> itemsOrdered = new ArrayList<Media>();
 	
 	/**
 	 *  
@@ -27,7 +29,7 @@ public class Order {
 	public float totalCost() {
 		float total = 0;
 		Media mediaItem;
-		java.util.Iterator iter = itemsOrdered.iterator();
+		Iterator<Media> iter = itemsOrdered.iterator();
 		while (iter.hasNext()) {
 			mediaItem = (Media) (iter.next());
 			total += mediaItem.getCost();

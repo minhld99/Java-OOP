@@ -1,12 +1,11 @@
 package hust.soict.aims.media;
 
-public class Media {
+public abstract class Media {
 	private String title;
 	private String category;
 	private float cost;
 	
 	public Media() {
-		// TODO Auto-generated constructor stubost
 	}
 	
 	public Media(String title) {
