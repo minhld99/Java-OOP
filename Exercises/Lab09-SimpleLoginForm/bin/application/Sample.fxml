@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="237.0" prefWidth="403.0" style="-fx-background-color: LightYellow;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="63.0" layoutY="75.0" prefHeight="25.0" prefWidth="60.0" text="Email">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="62.0" layoutY="143.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+      <PasswordField layoutX="161.0" layoutY="109.0" />
+      <Button layoutX="161.0" layoutY="143.0" mnemonicParsing="false" text="Clear" />
+      <TextField layoutX="161.0" layoutY="74.0" />
+      <Label layoutX="62.0" layoutY="110.0" text="Password">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
